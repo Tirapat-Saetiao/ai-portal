@@ -1,0 +1,112 @@
+.login-page {
+    font-family: 'Arial', sans-serif;
+    background: url('../components/Assets/011.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.login-container {
+    background: white;
+    border-radius: 20px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #ffffff00; 
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-header h1 {
+    font-size: 2.2em;
+    color: #6a1b9a; 
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    color: #444;
+    border: 1px solid #ccc;
+    border-radius: 15px; 
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #6a1b9a; 
+}
+
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #6a1b9a; 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #8e24aa; 
+}
+
+.google-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.google-login button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285F4; 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-login button:hover {
+    background-color: #357ae8; 
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #6a1b9a;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    color: #d32f2f; 
+    text-align: center;
+}

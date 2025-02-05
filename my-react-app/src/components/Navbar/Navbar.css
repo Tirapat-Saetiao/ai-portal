@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4B249B; /* Dark purple */
+  padding: 30px 50px;
+  color: white;
+}
+
+.navbar-left .logo a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.sub-title {
+  font-size: 14px;
+  color: #C8A2C8; /* Lighter purple */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #C8A2C8; /* Lighter purple */
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-login {
+  background: #16161D; /* Dark button background */
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.navbar-login:hover {
+  background: #2A2A38;
+}
