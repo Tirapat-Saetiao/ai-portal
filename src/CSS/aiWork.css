@@ -1,0 +1,124 @@
+/* Blog Container */
+.blog-container {
+  max-width: 1200px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 0 auto; /* Centering the container */
+}
+
+/* Blog Title */
+.blog-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #007bff;
+}
+
+/* Blog Scroll Wrapper */
+.blog-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  align-items: center;
+}
+
+/* Horizontal Row for Posts */
+.blog-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  justify-content: center; /* Centering the content */
+}
+
+/* Blog Post */
+.blog-post {
+  flex: 0 0 30%; /* Each post takes 30% width to fit 3 per row */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  white-space: normal;
+  text-align: left;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Post Title */
+.post-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Post Image */
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* Post Excerpt */
+.post-excerpt {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Read More Button */
+.read-more {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  border: 2px solid #007bff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.read-more:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Hide Scrollbar */
+.blog-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-scroll-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .blog-post {
+      flex: 0 0 45%; /* 2 per row for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-post {
+      flex: 0 0 100%; /* 1 per row for mobile */
+  }
+}
